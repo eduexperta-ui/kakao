@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김태진 | 7년 경력 테크 교육 전문가 포트폴리오</title>
+    <script>
+      (function() {
+        let theme;
+        try {
+          theme = localStorage.getItem('theme');
+        } catch (e) { }
+        
+        // 사용자가 명시적으로 설정한 값이 없으면 무조건 'light' 모드로 시작
+        if (!theme) {
+          theme = 'light';
+        }
+        
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: '#FEE500', // Kakao Yellow
+            },
+            fontFamily: {
+              sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+  }
+}
+</script>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    body, button, a {
+      cursor: none;
+    }
+    /* Webkit scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #FEE500; /* Kakao Yellow */
+      border-radius: 10px;
+      border: 2px solid #f9fafb; /* gray-50 */
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+      border-color: #000; /* black */
+      background-color: #FEE500;
+    }
+  </style>
+</head>
+  <body class="bg-gray-50 text-gray-800 dark:bg-black dark:text-gray-300 transition-colors duration-300 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
