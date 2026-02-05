@@ -62,7 +62,7 @@ const About: React.FC = () => {
           <div className="space-y-2">
               <h3 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-gray-200">융합적 배경을 바탕으로 한 교육 설계</h3>
               <p>
-              미디어.S/W 공학, 산업 공학을 통해 습득한 공학적 사고와 데이터 분석 역량, 그리고 의류학의 사용자 중심 관점을 결합하여 교육을 설계합니다. 이를 통해 담당 교육을 조직의 <strong>핵심 비즈니스 자산(Business Asset)</strong>으로 전환하여 수익화 및 브랜딩 가치를 제고해 왔습니다.
+              미디어.S/W 공학, 산업 공학을 통해 습득한 공학적 사고와 데이터 분석 역량, 그리고 의류학의 사용자 중심 관점을 결합하여 교육을 설계합니다. 이를 통해 담당 교육을 조직의 <strong>핵심 비즈니스 모델</strong>으로 전환하여 수익화 및 브랜딩 가치를 제고해 왔습니다.
               </p>
           </div>
 
